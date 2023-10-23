@@ -1,0 +1,11 @@
+/* COMPONENT - GRILLE */
+
+.grille {
+    display: grid;
+}
+
+.grille--3 {
+    column-gap: 2.5vw;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 2.5vw;
+}

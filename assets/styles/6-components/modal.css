@@ -1,0 +1,69 @@
+/* COMPONENT - MODAL */
+
+.modal {
+    align-items: center;
+    background-color: rgba(0,0,0,.9);
+    display: flex;
+    height: 100%;
+    left: 0;
+    margin: 0;
+    padding: 12vw;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    transition: top .3s ease, opacity .3s ease;
+}
+
+.modal--ferme {
+    top: 100px;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.modal--ouvert {
+    top: 0;
+    opacity: 1;
+    background-color: whitesmoke;
+}
+
+.modal__contenu {
+    height: fit-content;
+    padding: 0;
+    position: relative;
+    width: 100%;
+}
+
+.modal__contenu::after {
+    content: "";
+    display: block;
+}
+
+.modal__ferme {
+    cursor: pointer;
+    right: 25px;
+    padding: 26px;
+    position: absolute;
+    top: 25px;
+}
+
+.modal__ferme::before {
+    content: "";
+    background: linear-gradient(transparent, transparent 14px, white 14px, white, 16px, transparent 16px), 
+                linear-gradient(to right, transparent, transparent 14px, white 14px, white, 16px, transparent 16px);
+    height: 30px;
+    right: 10px;
+    position: absolute;
+    top: 10px;
+    transform: rotate(45deg);
+    transition: transform .3s ease;
+    width: 30px;
+}
+
+.modal-panier {
+    top: 12vh; 
+    right: 0; 
+    left: auto;
+    bottom: auto; 
+    width: 20vh;
+    max-height: 60vh;
+}

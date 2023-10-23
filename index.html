@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr_CA">
+<head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>TP 1</title>
+    <link rel="stylesheet" type="text/css" href="./assets/styles/styles.css">
+	<script type="module" src="./assets/scripts/main.js"></script>
+</head>
+<body>
+	<header>
+        <h1>TP 1</h1>
+        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 20 20" class="panier">
+            <path fill="currentColor" d="M2.997 3.496a.5.5 0 0 1 .5-.5h.438c.727 0 1.145.473 1.387.945c.165.323.284.717.383 1.059H16a1 1 0 0 1 .962 1.272l-1.496 5.275A2 2 0 0 1 13.542 13H8.463a2 2 0 0 1-1.93-1.473l-.642-2.355a.513.513 0 0 1-.01-.032L4.85 5.643l-.1-.337c-.1-.346-.188-.652-.32-.909c-.159-.31-.305-.4-.496-.4h-.438a.5.5 0 0 1-.5-.5ZM6.845 8.87l.653 2.396a1 1 0 0 0 .965.736h5.08a1 1 0 0 0 .961-.727L16 6H6l.845 2.869ZM10 15.499a1.5 1.5 0 1 1-3 0a1.5 1.5 0 0 1 3 0Zm-1 0a.5.5 0 1 0-1 0a.5.5 0 0 0 1 0Zm6 0a1.5 1.5 0 1 1-3 0a1.5 1.5 0 0 1 3 0Zm-1 0a.5.5 0 1 0-1 0a.5.5 0 0 0 1 0Z"/>
+        </svg>
+        <div class="modal modal--ferme modal-panier" data-js-modal-panier>
+            <button class="modal__ferme"></button>
+            <div class="modal__contenu"></div>
+        </div>        
+    </header>
+    <main>
+        <aside>
+            <div>
+                <a href="#" data-js-filtre="Tous"><small>Tous</small></a>
+                <a href="#" data-js-filtre="Nouveautés"><small>Nouveautés</small></a>
+                <a href="#" data-js-filtre="Littérature"><small>Littérature</small></a>
+                <a href="#" data-js-filtre="Art de vivre"><small>Art de vivre</small></a>
+                <a href="#" data-js-filtre="BD, Jeunesse, Humour"><small>BD, Jeunesse, Humour</small></a>
+                <a href="#" data-js-filtre="Culture et société"><small>Culture et société</small></a>
+                <a href="#" data-js-filtre="Loisirs, Tourisme, Nature"><small>Loisirs, Tourisme, Nature</small></a>
+                <a href="#" data-js-filtre="Savoir et science"><small>Savoir et science</small></a>
+            </div>
+        </aside>
+        <section>
+            <div class="modal modal--ferme" data-js-modal-livre>
+                <button class="modal__ferme"></button>
+                <div class="modal__contenu"></div>
+            </div>
+        </section>        
+        <section>
+            <div class="grille grille--3" data-js-livres></div>
+        </section>
+    </main>
+</body>
+</html>
